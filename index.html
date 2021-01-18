@@ -1,0 +1,1505 @@
+<html prefix="og: https://unsplash.com/photos/7jQh3EiS8Bs" class="sr js" lang="en">
+
+
+
+
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head itemscope="" itemtype="http://schema.org/Article">
+  <meta charset="UTF-8">
+  <title>CoVoice</title>
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anton'>
+  <link rel="stylesheet" href="style.html">
+
+  <!-- set the title of the website 
+  <title class="heading">RecAud</title>-->
+  <link rel="shortcut icon" href="../i.ibb.co/Fgf1CLt/Free-Sample-By-Wix-3.jpg" type="image/x-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-162416926-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162416926-1');
+
+  </script>
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="disable_radio.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    window.smoothScroll = function (target) {
+      var scrollContainer = target;
+      do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function (c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function () { scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+
+    function resetradio(checkbox) {
+      var buttons = document.querySelector('.buttons');
+      var radios = document.getElementsByName('ad_pack_id');
+      radios[0].checked = true;
+      if (checkbox.checked == true) {
+        buttons.style.display = 'block';
+      }
+      else {
+        buttons.style.display = 'none';
+      }
+    }
+
+    function setcheckbox() {
+      var checkbox = document.getElementsByName('featured_ad')[0];
+      if (checkbox.checked == false) {
+        checkbox.checked = true;
+      }
+    }
+  </script>
+
+  <!-- in case we want to add more headers -->
+
+  <link rel="stylesheet" href="static/common-css/hide_captcha_badge.html">
+  <style>
+    #section1 {
+      height: auto;
+      background-color: rgb(255, 255, 255);
+    }
+
+    #section2 {
+      height: auto;
+      background-color: rgb(255, 255, 255);
+    }
+
+
+    .heading {
+      font-size: 35px;
+      font-weight: 60;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      justify-self: start;
+      ;
+    }
+
+    .sub-heading {
+      font-size: 35px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      align-self: center;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 30%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .description {
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      align-self: center;
+    }
+
+    .questions {
+      font-size: 16px;
+      align-self: center;
+    }
+
+    .div-outer {
+      margin: auto;
+      width: 100%;
+      padding: 10px 30px;
+      background-color: rgb(255, 255, 255);
+      align-self: center;
+    }
+
+
+
+    .div-title {
+      margin: auto;
+      width: 44%;
+      text-align: center;
+      padding: 20px;
+      padding-top: 100px;
+      vertical-align: middle;
+      align-self: center;
+
+    }
+
+    .div-center {
+      margin: auto;
+      width: 80%;
+      border: 3px solid rgb(255, 255, 255);
+      padding: 10px;
+      background-color: rgb(255, 255, 255);
+      align-self: center;
+    }
+
+    .div-center2 {
+      width: 70%;
+      padding: 100px;
+      align-self: center;
+    }
+
+    .dropbtn {
+      width: 190px;
+      height: 60px;
+      border: 1px solid #4d4d4d;
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #4d4d4d;
+      border-radius: 5px;
+      box-shadow: 4px 4px rgb(49, 49, 49);
+      text-align-last: center;
+      text-align: center;
+      -ms-text-align-last: center;
+      -moz-text-align-last: center;
+    }
+
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #373a37;
+    }
+
+
+    .container {
+
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 1px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      border-color: #373a37;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-color: #373a37;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input~.checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked~.checkmark {
+      background-color: #373a37;
+      ;
+      border-color: #373a37;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      border-color: #373a37;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked~.checkmark:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    /*Age Range sliding*/
+
+    .range-slider .input-range {
+      -webkit-appearance: none;
+      width: 300px;
+      height: 10px;
+      border-radius: 5px;
+      background: #B7B6B6;
+      outline: none;
+    }
+
+    .range-slider .input-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #666;
+      cursor: pointer;
+      -webkit-transition: background .15s ease-in-out;
+      transition: background .15s ease-in-out;
+    }
+
+    .range-slider .input-range::-webkit-slider-thumb:hover {
+      background: #4d4d4d;
+    }
+
+    .range-slider .input-range:active::-webkit-slider-thumb {
+      background: #4d4d4d;
+    }
+
+    .range-slider .range-value {
+      display: inline-block;
+      position: relative;
+      width: 60px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 3px;
+      background: #4d4d4d;
+      padding: 5px 10px;
+      margin-left: 7px;
+    }
+
+    .range-slider .range-value:after {
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid #4d4d4d;
+      border-bottom: 7px solid transparent;
+      content: '';
+    }
+
+    input[type=radio] {
+      margin: 10px 10px 0 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    hr {
+      margin-bottom: 25px;
+    }
+
+    div.main {
+      width: 320px;
+      padding: 10px 60px 15px;
+      box-shadow: 0 0 10px;
+      border-radius: 2px;
+      font-size: 13px;
+      margin: 0 auto 50px;
+    }
+
+    span {
+      margin-right: 17px;
+      font-size: 20px;
+    }
+
+    input[type=radio] {
+      margin: 10px 10px 0 10px;
+    }
+
+    label {
+      color: #464646;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body class="div-outer" style="height: 100%;">
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-storage.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDvS3QO3fU8Ua-qxtzoRVZP2ceAomWp2KE",
+    authDomain: "covoice-e1272.firebaseapp.com",
+    projectId: "covoice-e1272",
+    storageBucket: "covoice-e1272.appspot.com",
+    messagingSenderId: "400156534924",
+    appId: "1:400156534924:web:5ae1c1ff99aca53a7af3a9",
+    measurementId: "G-R8D25VEPZZ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  // Create a root reference
+
+
+// Create a reference to 'images/mountains.jpg'
+
+</script>              
+  <div class="div-outer-block">
+    <div class="div-center">
+
+      <!--
+  <div class="div-center2">
+  
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header-inner" style="visibility: visible;">
+        <div class="brand header-brand">
+          <a href="http://cam.ac.uk/">
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>-->
+
+      <!-- Please the block content in here -->
+
+      <main>
+        <section class="section1" style="padding-bottom: 0px;" id="section1">
+          <div class="container-sm">
+            <div class="hero-inner">
+              <h1 class="heading" style="visibility: visible;">COVOICE</h1>
+            </div>
+          </div>
+        </section>
+        <!--
+    <div>
+      <img src="exposure-alert.png" style="width: fit-content; width: 100%; height: 375px; align-self: center;">
+    </div>-->
+
+        <!--
+    <section class="section1" id="section1">
+      <div class="container-sm">
+        <div class="newsletter-inner section-inner has-bottom-divider">
+          <div class="newsletter-header is-revealing" style="visibility: visible;">
+            <h2 class="sub-heading">About</h2>
+
+
+            <p class="description" style="padding-left: 0px;padding-right:0px;">
+              This web application will collect basic demographics, medical history, some voice samples
+                (whilst you read text on the screen), and a few seconds of coughing. Please ensure that when recording
+                the sounds you are in a quiet environment. We also collect your location.
+            </p>
+ -->
+
+        <form enctype="multipart/form-data" action="https://reshealthapp.000webhostapp.com/en/app/" method="post">
+          <!-- Generate the csrf token -->
+          <input type="hidden" name="csrfmiddlewaretoken"
+            value="SKRDl60X73objkxaAMt6uwPkxECedW2LLFnAGwLLEhVdWjiSYNrEl6s6NdWBZQJq">
+
+          <!-- for debug at the top, maybe remove it later? -->
+
+          <!-- erroneous form notification -->
+
+          <div class="section2" id="section2">
+            <!--  <h5 class="description">Some fields are required (*) - please ensure they are correctly filled.</h5>-->
+          </div>
+          <!--   <div id="section1">
+        <button type="button" class="dropbtn" onclick="smoothScroll(document.getElementById('section2'))">Proceed</button> 
+        </div>
+    </br>
+    </br>-->
+          </br>
+          </br>
+
+          <!-- Render the form, manually -->
+
+
+          <h3 class="sub-heading">1.Demographics</h3>
+
+          <br>
+          </br>
+          <div class="fieldWrapper">
+            <h5 class="description">Q1. Gender? </h5>
+
+            <select class="dropbtn" name="sex_choice" id="id_sex_choice">
+              <option class="dropbtn" value="Male">Male</option>
+
+              <option class="dropbtn" value="Female">Female</option>
+
+              <option class="dropbtn" value="Other">Other</option>
+
+              <!--   <option class="dropbtn" value="pnts">Prefer not to say</option>-->
+
+            </select>
+          </div>
+          <br />
+          <br />
+          <!-- Age field -->
+          <div class="fieldWrapper">
+            <h5 class="description">Q2. How old are you?</h5>
+            <div class="range-slider">
+              <input class="input-range" type="range" value="50" min="1" max="150">
+              <span class="range-value"></span>
+            </div>
+
+            <script src="../code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="function.js" type="text/javascript"></script>
+
+            <br />
+            <br />
+            <!-- Medical conditions field, we loop! -->
+            <div class="fieldWrapper">
+              <h5 class="description">Q3. Do you have any of these medical conditions? (You can select one or more)</h5>
+              <!-- render any errors, if they exist -->
+              <script type="text/javascript">
+
+                function UnSelectAll() {
+                  var items = document.getElementsByName('medical_condition_choice');
+                  for (var i = 0; i < items.length; i++) {
+                    if (items[i].type == 'checkbox')
+                      items[i].checked = false;
+                  }
+                }			
+              </script>
+
+              <div class="row">
+                <div class="column">
+
+                  <label class="container">
+                    <input type="checkbox" value="None" id="id_medical_condition_choice_0" onclick='UnSelectAll()'
+                      value="Unselect All" /> None
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="pnts"
+                      id="id_medical_condition_choice_1"> Prefer not to say
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="asthma"
+                      id="id_medical_condition_choice_2"> Asthma
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="cystic"
+                      id="id_medical_condition_choice_3"> Cystic fibrosis
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="copd"
+                      id="id_medical_condition_choice_4"> COPD/Emphysema
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="pulmonary"
+                      id="id_medical_condition_choice_5"> Pulmonary fibrosis
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="lung"
+                      id="id_medical_condition_choice_6"> Other lung disease
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="hbp"
+                      id="id_medical_condition_choice_7"> High Blood Pressure
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="angina"
+                      id="id_medical_condition_choice_8"> Angina
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="stroke"
+                      id="id_medical_condition_choice_9"> Previous stroke or Transient ischaemic attack
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="heart"
+                      id="id_medical_condition_choice_10"> Previous heart attack
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="valvular"
+                      id="id_medical_condition_choice_11"> Valvular heart disease
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="otherHeart"
+                      id="id_medical_condition_choice_12"> Other heart disease
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="diabetes"
+                      id="id_medical_condition_choice_13"> Diabetes
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="cancer"
+                      id="id_medical_condition_choice_14"> Cancer
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="meso"
+                      id="id_medical_condition_choice_15"> Mesothelioma
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="pluraleffusion"
+                      id="id_medical_condition_choice_16"> Plural effusion
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="pluraleffusion"
+                      id="id_medical_condition_choice_17"> Pneumonia
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="organ"
+                      id="id_medical_condition_choice_18"> Previous organ transplant
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="hiv"
+                      id="id_medical_condition_choice_19"> HIV or impaired immune system
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="obs"
+                      id="id_medical_condition_choice_20"> Obesity
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="ht"
+                      id="id_medical_condition_choice_21"> Hypertension
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="ck"
+                      id="id_medical_condition_choice_22"> Chronic Kidney disease
+                    <span class="checkmark"></span>
+                  </label>
+
+                </div>
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="tub"
+                      id="id_medical_condition_choice_23"> Tuberculosis
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                </div>
+              </div>
+
+              <div class="row">
+
+                <div class="column">
+                  <label class="container">
+                    <input type="radio" name="first" value="Enable" id="enable"> Blood Pressure
+                    <span class="checkmark"></span>
+                </div>
+
+                <input type="radio" name="second" class="second" value="Radio 1">
+                <span class="wrap">Low</span>
+                <input type="radio" name="second" class="second" value="Radio 2">
+                <span class="wrap">High</span>
+                <div>
+                  <input type="radio" name="first" value="Disable" id="disable">
+                  <span class="wrap">Clear</span>
+                </div>
+
+
+                </label>
+
+
+
+
+                <div class="column">
+                  <label class="container">
+                    <input type="checkbox" name="medical_condition_choice" value="others"
+                      id="id_medical_condition_choice_24" onclick="EnableDisableTextBox(this)" /> Other (please specify
+                    below)
+                    <span class="checkmark"></span>
+                  </label>
+                  <br>
+
+                  <input type="text" id="txtOthers" disabled="disabled" style="height: 30px;" />
+
+                </div>
+              </div>
+
+
+              <script type="text/javascript">
+                function EnableDisableTextBox(id_medical_condition_choice_17) {
+                  var txtOthers = document.getElementById("txtOthers");
+                  txtOthers.disabled = id_medical_condition_choice_17.checked ? false : true;
+                  if (!txtOthers.disabled) {
+                    txtOthers.focus();
+                  }
+                }
+              </script>
+
+
+
+              <!-- Symptoms Survey -->
+
+              <h3 class="sub-heading"> 2. Symptoms </h3>
+
+              <!-- symptoms status choice field -->
+              <div class="fieldWrapper">
+                <h5 class="description">Q1. Do you have any of the following symptoms today? (can choose more than one)
+                  (*)</h5>
+                <!-- render any errors, if they exist -->
+
+                <div class="row">
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="None"
+                        id="id_symptoms_status_choice_0"> None
+                      <span class="checkmark"></span>
+                    </label>
+
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="pnts"
+                        id="id_symptoms_status_choice_1"> Prefer not to say
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="fever"
+                        id="id_symptoms_status_choice_2"> Fever (feeling feverish)
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="chills"
+                        id="id_symptoms_status_choice_3"> Chills
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="drycough"
+                        id="id_symptoms_status_choice_4"> Dry cough
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="wetcough"
+                        id="id_symptoms_status_choice_5"> Wet cough
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="shortbreath"
+                        id="id_symptoms_status_choice_6"> Difficulty breathing (short of breath)
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="tightness"
+                        id="id_symptoms_status_choice_7"> Tightness in your chest
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="smelltasteloss"
+                        id="id_symptoms_status_choice_8"> Loss of taste and smell
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="dizziness"
+                        id="id_symptoms_status_choice_9"> Dizziness, confusion or vertigo
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="headache"
+                        id="id_symptoms_status_choice_10"> Headache
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="muscleache"
+                        id="id_symptoms_status_choice_11"> Muscle aches
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="sorethroat"
+                        id="id_symptoms_status_choice_12"> Sore throat
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="tiredness"
+                        id="id_symptoms_status_choice_13"> Tiredness
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="column">
+                    <label class="container">
+                      <input type="checkbox" name="symptoms_status_choice" value="lossofspeech"
+                        id="id_symptoms_status_choice_14"> Loss of speech or movement
+                      <span class="checkmark"></span>
+                    </label>
+                    <br>
+                  </div>
+
+                  <div class="row">
+                    <div class="column">
+                      <label class="container">
+                        <input type="checkbox" name="symptoms_status_choice" value="wheezing"
+                          id="id_symptoms_status_choice_15"> Wheezing
+                        <span class="checkmark"></span>
+                      </label>
+                      <br>
+                    </div>
+
+                    <div class="column">
+                      <label class="container">
+                        <input type="checkbox" name="symptoms_status_choice" value="nausea"
+                          id="id_symptoms_status_choice_16"> Nausea
+                        <span class="checkmark"></span>
+                      </label>
+                      <br>
+                    </div>
+
+                    <div class="column">
+                      <label class="container">
+                        <input type="checkbox" name="symptoms_status_choice" value="runnyblocked"
+                          id="id_symptoms_status_choice_17"> Runny or Blocked nose
+                        <span class="checkmark"></span>
+                      </label>
+                      <br>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <label class="container">
+                          <input type="checkbox" name="symptoms_status_choice" value="nightsweats"
+                            id="id_symptoms_status_choice_18"> Night sweats
+                          <span class="checkmark"></span>
+                        </label>
+                        <br>
+                      </div>
+
+                      <div class="column">
+                        <label class="container">
+                          <input type="checkbox" name="symptoms_status_choice" value="fatigue"
+                            id="id_symptoms_status_choice_19"> Fatigue
+                          <span class="checkmark"></span>
+                        </label>
+                        <br>
+                      </div>
+
+                      <div class="column">
+                        <label class="container">
+                          <input type="checkbox" name="symptoms_status_choice" value="hoarsevoice"
+                            id="id_symptoms_status_choice_20"> Hoarse voice
+                          <span class="checkmark"></span>
+                        </label>
+                        <br>
+                      </div>
+
+                      <div class="column">
+                        <label class="container">
+                          <input type="checkbox" name="symptoms_status_choice" value="otherss"
+                            id="id_symptoms_status_choice_21" onclick="EnableDisableTextBox(this)" /> Other (please
+                          specify below)
+                          <span class="checkmark"></span>
+                        </label>
+                        <br />
+
+                        <input type="text" id="txtOtherss" disabled="disabled" style="height: 30px;" />
+                      </div>
+
+                    </div>
+                    <script type="text/javascript">
+                      function EnableDisableTextBox(id_symptoms_status_choice_21) {
+                        var txtOtherss = document.getElementById("txtOtherss");
+                        txtOtherss.disabled = id_symptoms_status_choice_21.checked ? false : true;
+                        if (!txtOtherss.disabled) {
+                          txtOtherss.focus();
+                        }
+                      }
+                    </script>
+
+
+
+
+
+                    <!-- covid19 status choice field -->
+                    <div class="fieldWrapper">
+                      <h5 class="description">Q2. Have you had a positive test for COVID-19?</h5>
+
+                      <select class="dropbtn" name="cov19_status_choice" id="id_cov19_status_choice">
+                        <option class="dropbtn" value="never">Never</option>
+
+                        <option class="dropbtn" value="last14">In the last 14 days</option>
+
+                        <option class="dropbtn" value="over14">More than 14 days ago</option>
+
+                        <option class="dropbtn" value="pnts">Prefer not to say</option>
+
+                      </select>
+                    </div>
+
+                    <!-- Hospital status field -->
+                    <div class="fieldWrapper">
+                      <h5 class="description">Q3. Are you in the hospital right now?</h5>
+
+                      <select class="dropbtn" name="hospital_choice" id="id_hospital_choice">
+                        <option class="dropbtn" value="no">No</option>
+
+                        <option class="dropbtn" value="yes">Yes</option>
+
+                        <option class="dropbtn" value="pnts">Prefer not to say</option>
+
+                      </select>
+                    </div>
+
+                    <!-- Recordings -->
+
+                    <!-- Record audio for breathing (shallow) -->
+                    <div class="fieldWrapper">
+                      <h5 class="description">
+                        Q4. Press 'record' below and breathe in and out from your mouth as deeply as you can five times.
+                        Then press 'Stop'. (*)
+                      </h5>
+
+                      <div id="breathContainer">
+                        <br>
+                        <div class="">
+                          <div id="audioSupport"></div>
+                          <button class="dropbtn" type="button" id="recordBreath"
+                            onclick="record(this, 'breathContainer', 'id_audio_file_breathe')"
+                            style="margin-right: 70px">
+                            Record
+                          </button>
+                          <button class="dropbtn" type="button" name="stopBreath" id="breathStop"
+                            onclick="stopRecord('recordBreath')">
+                            Stop
+                          </button>
+                        </div>
+                      </div>
+                      <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                      <input type="hidden" name="audio_file_breathe" id="id_audio_file_breathe">
+                    </div>
+
+
+
+
+                    <!-- Record audio for cough reading -->
+                    <div class="fieldWrapper">
+                      <h5 class="description">Q5. Press 'record' below and cough three times. Then press 'Stop'. (*)
+                      </h5>
+                      <div id="coughContainer2">
+                        <br>
+                        <div class="">
+                          <div id="audioSupport"></div>
+                          <button class="dropbtn" type="button" id="recordCough2"
+                            onclick="record(this, 'coughContainer2', 'id_audio_file_cough2')"
+                            style="margin-right: 70px">
+                            Record
+                          </button>
+                          <button class="dropbtn" type="button" name="stopCough2" id="coughStop2"
+                            onclick="stopRecord('recordCough2')">
+                            Stop
+                          </button>
+                        </div>
+                      </div>
+                      <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                      <input type="hidden" name="audio_file_cough2" id="id_audio_file_cough2">
+                    </div>
+
+                    <!-- Record audio for text reading -->
+                    <div class="fieldWrapper">
+                      <h5 class="description">
+                        Q6. Press 'record' below and pronounce the vowel /a/ and hold for 5 secs, then press 'Stop'. (*)
+                      </h5>
+                      <div id="readContainer">
+                        <div id="readSupport"></div>
+                        <button class="dropbtn" type="button" id="recordRead"
+                          onclick="record(this, 'readContainer', 'id_audio_file_read')" style="margin-right: 70px">
+                          Record
+                        </button>
+                        <button class="dropbtn" type="button" name="stopRead" id="stopRead"
+                          onclick="stopRecord('recordRead')">
+                          Stop
+                        </button>
+                      </div>
+                      <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                      <input type="hidden" name="audio_file_read" id="id_audio_file_read">
+                      <input type="hidden" name="blob_test" id="blob_test" value="">
+                    </div>
+
+                    <div class="fieldWrapper">
+                      <h5 class="description">
+                        Q7. Press 'record' below and pronounce the vowel /e/ and hold for 5 secs, then press 'Stop'. (*)
+                      </h5>
+                      <div id="readContainer2">
+                        <div id="readSupport2"></div>
+                        <button class="dropbtn" type="button" id="recordRead2"
+                          onclick="record(this, 'readContainer2', 'id_audio_file_read2')" style="margin-right: 70px">
+                          Record
+                        </button>
+                        <button class="dropbtn" type="button" name="stopRead2" id="stopRead2"
+                          onclick="stopRecord('recordRead2')">
+                          Stop
+                        </button>
+                      </div>
+                      <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                      <input type="hidden" name="audio_file_read2" id="id_audio_file_read2">
+                      <input type="hidden" name="blob_test" id="blob_test" value="">
+                    </div>
+                  </div>
+
+                  <div class="fieldWrapper">
+                    <h5 class="description">
+                      Q8. Press 'record' below and pronounce the vowel /o/ and hold for 5 secs, then press 'Stop'. (*)
+                    </h5>
+                    <div id="readContainer3">
+                      <div id="readSupport3"></div>
+                      <button class="dropbtn" type="button" id="recordRead3"
+                        onclick="record(this, 'readContainer3', 'id_audio_file_read3')" style="margin-right: 70px">
+                        Record
+                      </button>
+                      <button class="dropbtn" type="button" name="stopRead3" id="stopRead3"
+                        onclick="stopRecord('recordRead3')">
+                        Stop
+                      </button>
+                    </div>
+                    <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                    <input type="hidden" name="audio_file_read3" id="id_audio_file_read3">
+                    <input type="hidden" name="blob_test" id="blob_test" value="">
+                  </div>
+
+                  <div class="fieldWrapper">
+                    <h5 class="description">
+                      Q9. Press 'record' below and count slowly from 1 to 10, then press 'Stop'. (*)
+                    </h5>
+                    <div id="countContainer">
+                      <button class="dropbtn" type="button" id="recordCount"
+                        onclick="record(this, 'countContainer', 'id_audio_file_count')" style="margin-right: 70px">
+                        Record
+                      </button>
+                      <button class="dropbtn" type="button" name="stopcount" id="stopCount"
+                        onclick="stopRecord('recordCount')">
+                        Stop
+                      </button>
+                    </div>
+                    <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                    <input type="hidden" name="audio_file_count" id="id_audio_file_count">
+                    <input type="hidden" name="blob_test" id="blob_test" value="">
+                  </div>
+
+                  <div class="fieldWrapper">
+                    <h5 class="description">
+                      Q10. Press 'record' below and count fast, from 1 to 10, then press 'Stop'. (*)
+                    </h5>
+                    <div id="countContainer2">
+                      <button class="dropbtn" type="button" id="recordCount2"
+                        onclick="record(this, 'countContainer2', 'id_audio_file_count2')" style="margin-right: 70px">
+                        Record
+                      </button>
+                      <button class="dropbtn" type="button" name="stopcount2" id="stopCount2"
+                        onclick="stopRecord('recordCount2')">
+                        Stop
+                      </button>
+                    </div>
+                    <!-- This should be populated by javascript, after the audio recording is done. -->
+
+                    <input type="hidden" name="audio_file_count2" id="id_audio_file_count2">
+                    <input type="hidden" name="blob_test" id="blob_test" value="">
+                  </div>
+
+                  <!-- Get location -->
+                  <div class="fieldWrapper">
+                    <h5 class="description">Q11.We will now ask for your approximate location.</h5>
+                    <div class="">
+                      <div id="location"></div>
+                      <button class="dropbtn" type="button" name="location" onclick="getLocation()">
+                        Get location
+                      </button>
+                    </div>
+                    <!-- this should be populated by javascript and will contain the location of the user. -->
+
+                    <input type="hidden" name="location_data" value="unavailable" id="id_location_data">
+                  </div>
+
+                  <br>
+                  <br>
+                  <!-- Finally submit the form -->
+
+                <input class="dropbtn" type="button" value="Submit" onclick="onSubmit()">
+
+
+                
+                  <div>
+                    <p style="color: white;">.</p>
+                  </div>
+                  <!-- added reCAPTCHA field here -->
+                  <div class="fieldWrapper">
+                    <script src="../www.google.com/recaptcha/api.js"></script>
+                    <script type="text/javascript">
+                      // Submit function to be called, after reCAPTCHA was successful.
+                      var onSubmit_74dea7b6616849e9bb7672f712d76aba = function (token) {
+                        // console.log("reCAPTCHA validated for 'data-widget-uuid=\"74dea7b6616849e9bb7672f712d76aba\"'. Submitting form...")
+                        document.querySelector('.g-recaptcha[data-widget-uuid="74dea7b6616849e9bb7672f712d76aba"]').closest('form').submit();
+                      };
+
+                      // Helper function to prevent form submission and execute verification.
+                      var verifyCaptcha_74dea7b6616849e9bb7672f712d76aba = function (e) {
+                        e.preventDefault();
+                        grecaptcha.execute();
+                      };
+
+                      // Bind the helper function to the form submit action.
+                      document.addEventListener('DOMContentLoaded', function () {
+                        var element = document.querySelector('.g-recaptcha[data-widget-uuid="74dea7b6616849e9bb7672f712d76aba"]');
+                        element.closest('form').addEventListener('submit', verifyCaptcha_74dea7b6616849e9bb7672f712d76aba);
+                      });
+                    </script>
+
+                    <script src="static/common-js/main.min.html"></script>
+                    <script src="static/bootstrap/js/jquery.min.html"></script>
+                    <!-- <script src="/static/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+                    <script>
+                      let globearray=[];
+                      let mediaRecorder;
+                      var timeout;
+
+                      let x = document.getElementById("location");
+
+                      function geolocationErrorHandler(err) {
+                        x.innerHTML = "Geolocation is not allowed or unsupported by this browser session.";
+
+                        document.getElementById("id_location_data").value = "unavailable"
+                      }
+
+                      function getLocation() {
+                        if (navigator.geolocation) {
+                          navigator.geolocation.getCurrentPosition(retrievePositionHandler, geolocationErrorHandler);
+                        } else {
+                          x.innerHTML = "Geolocation is not supported by this browser.";
+                          document.getElementById("id_location_data").value = "unavailable"
+                        }
+                      }
+
+                      function retrievePositionHandler(position) {
+                        // put the position data onto the hidden field
+                        let geoPos = `${position.coords.latitude},${position.coords.longitude},${position.coords.accuracy}`;
+
+                        document.getElementById("id_location_data").value = geoPos;
+                        x.innerHTML = "Approximate location recorded successfully.";
+                      }
+
+                      function getAudio(container, save_to_id) {
+                        //console.log("Container and SAve to ID",container, save_to_id); 
+                        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                          navigator.mediaDevices.getUserMedia(
+                            { audio: true }
+                          ).then(function (stream) {
+                            mediaRecorder = new MediaRecorder(stream);
+                            let fileReader = new FileReader();
+                            mediaRecorder.start();
+                            timeout = setTimeout(() => mediaRecorder.stop(), 25000); // we'll have a 25s media file (maximum size, the user can stop it earlier)
+                            let chunks = [];
+                            mediaRecorder.ondataavailable = function (e) {
+                              chunks.push(e.data);
+                            };
+                            mediaRecorder.onstop = function () {
+                              const audio = document.createElement('audio');
+                              audio.setAttribute('controls', ''); 
+                              
+                              //const blobDataInWebaFormat = e.data; // .weba = webaudio; subset of webm
+                              //const blobDataInWavFormat: Blob = new Blob([blobDataInWebaFormat], { type : 'audio/wav; codecs=0' });
+                              //const dataUrl = URL.createObjectURL(blobDataInWavFormat);
+                              //console.log(dataUrl,"daturl"); 
+
+
+
+
+                             const blob = new Blob(chunks, { 'type': 'audio/wav;  codecs=0' });
+                             chunks = [];
+                             audio.src = window.URL.createObjectURL(blob);
+                             blob
+                             //console.log(Blob.prototype.stream(),"Blob Stream");
+                            //  console.log(blob,"Blob");
+                            //  console.log(audio.src, "Audio src");
+                             var fileButton = document.getElementById(fileButton);
+                            
+                             //  console.log(fileButton,"filebutton");
+                             BlobArray.push(blob);
+                             
+
+                             // fileButton.addEventListener(‘change’, function(e){
+                               // var file = e.target.files[0];
+                              //  var storageRef = firebase.storage().ref(Math.random()+'.wav'); //MAIN
+                              //  storageRef.put(blob);
+
+                               
+
+                             //}); 
+                              //this.afStorage.upload('/images' + Math.random() + this.filePath, this.filePath);
+                            //var storageRef = firebase.storage().ref();
+                            //var mountainsRef = storageRef.child(audio.src);
+
+                            //  var mountainImagesRef = storageRef.child('audio/',audio.src);
+
+                             // While the file names are the same, the references point to different files
+                            //mountainsRef.name === mountainImagesRef.name            // true
+
+                            //mountainsRef.fullPath === mountainImagesRef.fullPath    // false
+                            //var file = blob // use the Blob or File API
+
+                            //ref.put(blob).then(function(snapshot) {
+
+                              //console.log('Uploaded a blob or file!');
+
+                            //});
+
+                            //ref.put(file).then(function(snapshot) {
+                            //console.log('Uploaded a blob or file!');
+                             //          });
+
+                              document.getElementById(container).prepend(audio);
+
+                              // console.log(audio.attributes.src, "Audio Path");
+                              // console.log(document, "document");
+
+
+
+                              // define the function we have to use in order to correctly assign the string value.
+                              fileReader.onload = function () {
+
+                                let res = fileReader.result.replace('data:audio/wav;codecs=0;base64', '');
+
+                                document.getElementById(save_to_id).value = res;
+                                // console.log(res);
+                              };
+                              fileReader.readAsDataURL(blob)
+
+                            }
+                          }).catch(function (error) {
+                            document.getElementById("audioSupport").innerHTML = error
+                          })
+                        } else {
+                          document.getElementById("audioSupport").innerHTML = "Audio recording not supported";
+                        }
+                      }
+                      
+
+                      function record(button, container, save_to_id) {
+                        let oldAudio = document.getElementById(container).querySelector("audio");
+                        if (oldAudio) {
+                          oldAudio.remove();
+                        }
+                        
+                        getAudio(container, save_to_id);
+                        button.style.background = "red";
+                      }
+                      
+                      function stopRecord(buttonId) {
+                        mediaRecorder.stop();
+                        clearTimeout(timeout);
+                        document.getElementById(buttonId).style.background = "";
+                      }
+
+                      let BlobArray=[];
+
+                      let currentDate = new Date();
+                      console.log("Submit button", currentDate);
+                      console.log("Submit button", currentDate.toString().slice(0,15));
+
+                      function onSubmit(){
+
+                        for(var i=0; i<BlobArray.length; i++){
+                          var storageRef = firebase.storage().ref(currentDate.toString().slice(0,15)+'/'+Math.random()+'.wav');
+                          storageRef.put(BlobArray[i]);
+                          }
+                          window.location.replace("thankyou.html")
+                        }
+                    </script>
+
+
+
+                    <div
+                      style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;">
+                      <div
+                        style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;">
+                      </div>
+                      <div
+                        style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;">
+                        <iframe title="recaptcha challenge"
+                          src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;k=6LfnveYUAAAAAC1Hm2CPx85emVkqNTZcpumCAfBD&amp;cb=bazc1t35rgnn"
+                          style="width: 100%; height: 100%;" name="c-4ebpzzwozis1" scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                          frameborder="0">
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website&amp;utm_content=footer_img"><img src="../cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&amp;utm_medium=panel&amp;utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+              </body>
+</html>

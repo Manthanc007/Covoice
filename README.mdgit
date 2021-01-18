@@ -1,0 +1,2 @@
+"# Covoice"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/Manthanc007/Covoice.gitgit push -u origin main
+"# Covoice"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/Manthanc007/Covoice.gitgit push -u origin main                
